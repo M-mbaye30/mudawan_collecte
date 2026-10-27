@@ -1,7 +1,7 @@
 
 
 export const CONFIG = {
-  supabaseUrl: 'shvgccaxgioorjyevemf',
+  supabaseUrl: 'https://shvgccaxgioorjyevemf.supabase.co',
   supabaseAnonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNodmdjY2F4Z2lvb3JqeWV2ZW1mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMxMTUxMzksImV4cCI6MjEwODY5MTEzOX0.bKyzvfn1bYi0Th-F7nlab0P8N7jWnI95QbwsFyLiihw',
 
   // Licence sous laquelle les traductions des contributeurs sont publiées.
