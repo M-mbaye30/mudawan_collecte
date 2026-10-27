@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mudawan · المراجعة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,500&family=Noto+Naskh+Arabic:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">
+      <span class="brand-ar" lang="ar">مُدوَّنة</span>
+      <span class="brand-sub" data-i18n="brand_sub"></span>
+    </a>
+    <nav class="nav">
+      <a href="./" data-nav="contribute" data-i18n="nav_contribute"></a>
+      <a href="review.html" id="nav-review" data-nav="review" data-i18n="nav_review" hidden></a>
+      <button type="button" class="link-btn" id="lang-btn" data-i18n="lang_switch"></button>
+      <button type="button" class="link-btn" id="signout-btn" data-i18n="sign_out" hidden></button>
+    </nav>
+  </header>
+
+  <p class="demo-notice" id="demo-notice" data-i18n="demo_notice" hidden></p>
+
+  <main class="review">
+    <h1 data-i18n="review_title"></h1>
+    <p class="intro" data-i18n="review_intro"></p>
+
+    <form class="signin" id="signin-form" hidden>
+      <h3 data-i18n="review_signin"></h3>
+      <div class="signin-row">
+        <label class="visually-hidden" for="signin-email" data-i18n="email_label"></label>
+        <input type="email" id="signin-email" dir="ltr" required autocomplete="email" placeholder="name@example.org">
+        <button type="submit" class="primary" data-i18n="send_link"></button>
+      </div>
+      <p class="signin-sent" role="status"></p>
+    </form>
+
+    <p class="notice" id="forbidden" data-i18n="review_forbidden" hidden></p>
+
+    <ol class="queue" id="queue"></ol>
+  </main>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script type="module" src="assets/review.js"></script>
+</body>
+</html>
